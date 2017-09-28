@@ -1,0 +1,63 @@
+.container{
+    color: grey;
+    width:100%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.accordion{
+    margin-bottom: 5px;
+}
+
+.accordion h3{
+    padding:10px;
+    color:white;
+    background-color: #9E38B0;
+    margin: 0;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.accordion img{
+    float: right;
+    margin-top:-4px;
+
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+
+}
+.accordion p{
+    padding:10px;
+    border:1px solid grey;
+    border-top:none;
+    margin: 0;
+    display: none;
+}
+
+.accordion.clicked p{
+    display: block;
+}
+
+.accordion.clicked img{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.accordion.clicked h3{
+    background-color: #6844B7;
+}
